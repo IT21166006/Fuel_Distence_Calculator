@@ -53,9 +53,5 @@ Plan your trips more efficiently by estimating fuel consumption and costs based 
 
 ---
 
-## 🚀 How to Run
-
-1. Clone the repository:
-
 ```bash
 git clone https://github.com/your-username/fuel-cost-calculator.git
