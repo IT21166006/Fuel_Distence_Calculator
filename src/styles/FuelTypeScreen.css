@@ -1,0 +1,117 @@
+.fuel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fuel-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.price-display {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.price-display h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.price-display p {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.last-updated {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.next-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #45a049;
+}
+
+.next-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .fuel-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .fuel-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .price-display {
+    padding: 15px;
+  }
+
+  .price-display p {
+    font-size: 1.2rem;
+  }
+} 
