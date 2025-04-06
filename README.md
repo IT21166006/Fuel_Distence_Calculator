@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+🛣️ Fuel Cost Calculator App
+A simple, interactive app to calculate your fuel journey cost! 🚗⛽🗺️
+Plan your trip smarter by knowing how much fuel you’ll need and what it will cost, based on real-time fuel prices and route distance!
+![image](https://github.com/user-attachments/assets/31a72ba2-f7a3-49eb-b912-f554ef692ecc)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
+👋 Welcome Screen
+Friendly intro screen to get started.
 
-## Available Scripts
+🚘 Select Vehicle & Fuel Consumption
 
-In the project directory, you can run:
+Choose your vehicle type: Car, Bike, etc.
 
-### `npm start`
+Manually enter your vehicle’s fuel consumption (KM per 1 liter).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⛽ Select Fuel Type & Real-time Price
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Pick fuel type: Petrol, Diesel, etc.
 
-### `npm test`
+Get real-time fuel prices using a free API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🗺️ Select Journey Route
 
-### `npm run build`
+Select start and end points on the map.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Calculate distance between locations using OpenRouteService API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+💡 Results & Calculation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See your fuel consumption efficiency.
 
-### `npm run eject`
+Distance between your chosen places.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Current fuel price.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Calculated outputs:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+✅ How much it will cost for fuel (LKR).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+✅ How many liters of fuel are required.
 
-## Learn More
+📱 Screens Flow
+Screen	Description
+🖥️ Screen 1	Welcome Screen
+🚗 Screen 2	Select vehicle type and enter fuel consumption manually (KM per 1 liter).
+⛽ Screen 3	Select fuel type and fetch real-time price.
+🗺️ Screen 4	Select start and end points on the map, calculate distance.
+🧾 Screen 5	Show summary and calculations!
+🛠️ Tech Stack
+Frontend: React / CSS / JS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Maps & Routing: OpenRouteService API 🗺️
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Fuel Prices: Free fuel price API (TBD)
 
-### Code Splitting
+Calculation: Simple JavaScript logic
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🚀 How to Run
+Clone the repository:
 
-### Analyzing the Bundle Size
+bash
+Copy
+Edit
+git clone https://github.com/your-username/fuel-cost-calculator.git
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+bash
+Copy
+Edit
+cd fuel-cost-calculator
+npm install
+Start the app:
 
-### Making a Progressive Web App
+bash
+Copy
+Edit
+npm start
+🌍 APIs Used
+🔍 OpenRouteService API — For distance and route mapping.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+⛽ Fuel Price API (Free) — 
+# Sri Lankan Realtime Fuel Price API
 
-### Advanced Configuration
+## Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This API provides up-to-date fuel prices and the latest update date for Sri Lanka.
 
-### Deployment
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-   Realtime Fuel Prices
+-   Regularly Updated
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Fuel Price API](https://github.com/user-attachments/assets/1b5473ef-b113-4e74-96f9-97c0b53a777b)
+
+See More:
+https://github.com/IT21166006/SL_Fuel_Price_API.git
+
+🤝 Contributing
+Contributions are welcome!
+Feel free to open issues or pull requests to improve the app.
+
+📄 License
+This project is licensed under the MIT License.
+
+🚧 Future Improvements
+🔋 Add electric vehicle option (battery consumption).
+
+🧩 Save past routes & costs.
+
+🌍 Multi-currency support.
+
+📊 Visual charts for cost analysis.
+
+If you want, I can also give you:
+
+Folder structure proposal 📂
+
+package.json example
+
+API suggestion for free fuel price APIs
+
+React component scaffold for each screen (ready to code!)
+
+Just tell me! 🚀🚀🚀
+
+
+
+
