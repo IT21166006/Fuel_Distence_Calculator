@@ -59,7 +59,14 @@ const ResultsScreen = () => {
           <span className="label">Total Cost:</span>
           <span className="value">{results.totalCost} LKR</span>
         </div>
+
+        <div className="result-item highlight">
+          <span className="label">Hire return Cost:</span>
+          <span className="value">{results.totalCost*2} LKR</span>
+        </div>
       </div>
+      
+      
 
       <button 
         className="restart-button"
