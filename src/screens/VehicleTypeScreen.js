@@ -123,7 +123,7 @@ const VehicleTypeScreen = () => {
 
               <button 
                 type="submit" 
-                className="btn btn-primary w-100"
+                className="btn btn-success w-100"
                 disabled={!vehicleType || (showCustomInput && !customConsumption)}
               >
                 Next
