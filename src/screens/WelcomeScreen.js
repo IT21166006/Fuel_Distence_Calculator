@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/WelcomeScreen.css';
+import UserCountService from '../services/UserCountService';
 
 const WelcomeScreen = () => {
   const navigate = useNavigate();
+  const { onlineUsers, isLoading, error } = UserCountService();
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -39,6 +41,7 @@ const WelcomeScreen = () => {
         <p className="subtitle">
           Plan your journey and calculate fuel costs with precision
         </p>
+        
 
         <div className="features">
           <div className="feature">
@@ -58,14 +61,38 @@ const WelcomeScreen = () => {
             <span>Realtime Price Updating</span>
           </div>
         </div>
+        
 
         <button 
           onClick={handleGetStarted} 
           className="get-started-button"
         >
-          <span className="button-text">Get Started</span>
+          <span className="button-text">Get Started
+
+          <div className="online-users-container">
+          {isLoading ? (
+            <div className="online-users-loading">
+              <span className="loading-dot"></span>
+              <span className="loading-dot"></span>
+              <span className="loading-dot"></span>
+            </div>
+          ) : error ? (
+            <div className="online-users-error">
+              <span className="error-icon">!</span>
+            </div>
+          ) : (
+            <div className="online-users">
+              <span className="online-indicator"></span>
+              <span className="online-count">{onlineUsers}</span>
+              <span className="online-text">online now</span>
+            </div>
+          )}
+        </div>
+          </span>
           <span className="button-arrow">→</span>
         </button>
+
+        
       </div>
     </div>
   );
